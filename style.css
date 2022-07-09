@@ -1,0 +1,35 @@
+body {
+  background-color: #ADD8E6;
+
+}
+
+input {
+  border-radius: 25%;
+}
+
+.container1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  width: 36rem;
+}
+
+#timeSlot {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+
+}
+
+#frequency {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightgrey;
+  margin-top: 20px;
+
+  display: none;
+
+}

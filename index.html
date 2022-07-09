@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Time Record</title>
+  </head>
+  <body>
+    <div class="container1">
+      <h3>Select Schedule:</h3>
+
+
+      <button onclick="timeSlot()" type="button"  class="btn1 btn btn-outline-primary btn-lg">Primary</button>
+      <button onclick="frequency()" type="button" class="btn2 btn btn-outline-primary btn-lg ">Primary</button>
+        <form name="myForm" onsubmit="return validateForm()" method="post" required>
+      <div id="timeSlot">
+
+
+        <label for="bf">Before Breakfast:</label>
+        <input class="bf" type="number" min="1" max="8" width="50" name="breakfast" >
+        <br>
+        <label for="lc">Before Lunch:</label>
+        <input class="lc" type="number" min="1" max="8" name="lunch">
+        <br>
+        <label for="dn">Before Dinner:</label>
+        <input class="dn" type="number" min="1" max="8" name="dinner" >
+        <br>
+        <br>
+        <input onclick="showData()" class="btn btn-primary" type="submit" value="Submit">
+
+      </div>
+
+      <div id="frequency">
+
+
+
+        <input class="nt" type="number" min="1" max="8"  name="numberOftimes" >
+
+        <label for="dy">Times a: </label>
+        <div class="btn-group">
+
+            <label class="dropdown-menu dropdown-menu-end" for="day">A Days(s): </label>
+              <select name="day">
+                <option value="A Day(s)">A Days(s): </option>
+                <option value="A Week(s)">A Weeks(s): </option>
+                <option value="A Month(s)">A Month(s): </option>
+              </select>
+
+
+          </div>
+            <br>
+              <br>
+
+        <input onclick="showData()" class="btn btn-primary" type="submit" value="Submit">
+        </form>
+      </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
